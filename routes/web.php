@@ -7,5 +7,5 @@ Route::get('/', function () {
 });
 use App\Http\Controllers\SalesController;
 
-Route::get('/sales-form', [SalesController::class, 'create'])->name('sales.create');
-Route::post('/sales-form', [SalesController::class, 'store'])->name('sales.store');
+
+Route::post('/sales-multi-store', [SalesController::class, 'storeMultiple'])->name('sales.multiple.store');
